@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Galeria</title>
+  <link rel="stylesheet" href="./css/galeria.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="./imagens/logo/logo - breaking bad.png" alt="Ícone Breaking Bad" class="logo-image left">
+      <div class="logo-text">Breaking Bad <span class="ts">Wiki</span></div>
+      <img src="./imagens/logo/Logo iftm.png" alt="Ícone IFTM" class="logo-image right">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="personagens.html">Personagens</a></li>
+        <li><a href="temporadas.html">Temporadas</a></li>
+        <li><a href="curiosidades.html">Curiosidades</a></li>
+        <li><a href="elcamino.html">El Camino</a></li>
+        <li><a href="galeria.html" class="active">Galeria</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="galeria">
+      <div class="galeria-container">
+        <img src="./Imagens/fotos/foto1.jpeg" alt="Imagem Grande" class="imb_big" id="imgGrande">
+        <div class="grade">
+          <img src="./Imagens/fotos/foto1.jpeg" class="imb_mini" alt="">
+          <img src="./Imagens/fotos/foto2.jpeg" class="imb_mini" alt="">
+          <img src="./Imagens/fotos/foto3.jpeg" class="imb_mini" alt="">
+          <img src="./Imagens/fotos/foto4.jpeg" class="imb_mini" alt="">
+          <img src="./Imagens/fotos/foto5.jpeg" class="imb_mini" alt="">
+          <img src="./Imagens/fotos/foto6.jpeg" class="imb_mini" alt="">
+          <img src="./Imagens/fotos/foto7.jpeg" class="imb_mini" alt="">
+          <img src="./Imagens/fotos/foto8.jpeg" class="imb_mini" alt="">
+          <img src="./Imagens/fotos/foto9.jpeg" class="imb_mini" alt="">
+          <img src="./Imagens/fotos/foto10.jpeg" class="imb_mini" alt="">
+          <img src="./Imagens/fotos/foto11.jpeg" class="imb_mini" alt="">
+          <img src="./Imagens/fotos/foto12.jpeg" class="imb_mini" alt="">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const miniaturas = document.querySelectorAll(".imb_mini");
+    const imgGrande = document.getElementById("imgGrande");
+
+    miniaturas.forEach(img => {
+      img.addEventListener("click", () => {
+        imgGrande.src = img.src;
+      });
+    });
+  </script>
+</body>
+
+</html>

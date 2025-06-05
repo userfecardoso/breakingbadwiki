@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Contato</title>
+    <link rel="stylesheet" href="./css/contato.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="./imagens/logo/logo - breaking bad.png" alt="Ícone Breaking Bad" class="logo-image left">
+            <div class="logo-text">Breaking Bad <span class="ts">Wiki</span></div>
+            <img src="./imagens/logo/Logo iftm.png" alt="Ícone IFTM" class="logo-image right">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="personagens.html">Personagens</a></li>
+                <li><a href="temporadas.html">Temporadas</a></li>
+                <li><a href="curiosidades.html">Curiosidades</a></li>
+                <li><a href="elcamino.html">El Camino</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="contato.html" class="active">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contato-section">
+        <h1 class="titulo-contato">Fale Conosco</h1>
+        <div class="form-container">
+            <form action="#" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="assunto">Assunto:</label>
+                <input type="text" id="assunto" name="assunto" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
+
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
